@@ -49,7 +49,7 @@ read_counts = {"sample_A": 1520000, "sample_B": 830000, "sample_C": None}
 sample = "sample_A"
 passed_qc= True
 
-if read_counts[sample] == False:
+if not sample in read_counts:
     print ("unknown sample")
 elif read_counts[sample] == None:
     print ("sequencing failed")
