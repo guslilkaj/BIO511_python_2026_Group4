@@ -41,7 +41,7 @@ else:
 
 
 read_counts = {"sample_A": 1520000, "sample_B": 830000, "sample_C": None}
-
+passed_qc = True
 
 #print("sample_B" in read_counts)
 
