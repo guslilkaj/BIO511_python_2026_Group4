@@ -55,12 +55,14 @@ else:
 # Sample dictionary
 print()
 read_counts = {"sample_A": 1520000, "sample_B": 830000, "sample_C": None}
-sample = "sample_C"
+sample = "sample_A"
+passed_qc = True # Boolean variable to indicate if the sample passed quality control
 if sample not in read_counts:
     print("The sample is not contained in this dictionary")
 elif read_counts[sample] is None:
     print("Sequencing failed for this sample")
-elif read_counts[sample] > 1000000:
-    print("Enaugh reads")
+elif read_counts[sample] > 1000000 and passed_qc:
+    print("Ready for analysis")
 else:
-    print("Too few reads")
+    print("Too few reads") # This message will be printed also if passed_qc is False, even if the sample has more than 1 million reads.
+print()
