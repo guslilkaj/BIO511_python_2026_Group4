@@ -19,3 +19,13 @@ sequence = 'GATTACAGAACTGATAC'
 #To double check I check manually what I expect to find as a result later
 #The third A in the sequence "sequence" is in position 6 because the first base is position 0
 
+position = 0
+A_count = 0
+
+while A_count < 3:
+    if sequence[position] == 'A':
+        A_count += 1
+    position += 1
+
+third_A_position = position - 1
+print(third_A_position)
