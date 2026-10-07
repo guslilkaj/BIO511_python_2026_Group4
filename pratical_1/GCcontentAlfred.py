@@ -1,4 +1,4 @@
-sequence = "TTAGGCATGCCGATATCGGCTTA"
+sequence = "ATAGGCATGCCGATATCGGCTTA"
 gc_count = 0
 
 
@@ -14,4 +14,3 @@ for x in range(len(sequence)):
 gc_percentage = len(sequence) / gc_count
 print("GC count of " + str(gc_count) + ". " + str(gc_percentage) + "%. of sequence")
 print(len(sequence))
-
