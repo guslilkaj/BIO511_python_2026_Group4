@@ -95,6 +95,7 @@ values = ['10', '5', 'hello', '8', 'three', '2', 23.4, 'DNA', [1, 3, 4],
 # I added a float, a list, and a dictionary containing binary keys
 # (0b...) and their corresponding binary values as strings.
 
+for value in values:
     try:
         v = int(value)
         print(f"Converted int: {v}")
