@@ -1,6 +1,4 @@
 
-# TO COPY AND PASTE MY LOOPS PRACICAL INFORMATION HERE!
-
 # Creating a simple loop
 
 mylist = ["red", "blue", "purple", "black", "yellow", "pink", "beige"]
@@ -10,7 +8,6 @@ for i in range (len(mylist)):
 
     if i + 1 == 5:
         break
-
 
 
 
