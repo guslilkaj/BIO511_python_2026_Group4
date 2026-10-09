@@ -76,3 +76,15 @@ print(call1)
 print(call2)
 print(call3)
 print(result)
+
+
+values = ['10', 'guh', '5', 'hello', '8', 'three', '2']
+values_list = [  ]
+for v_inst in values:
+    try:
+        v_integer = int(v_inst)
+        values_list.append(v_integer)
+        print("converted value: " + str(v_inst) + " to an integer and added to " + str(values_list))
+    except ValueError:
+        print(str(v_inst) + " is not a valid value")
+        continue
