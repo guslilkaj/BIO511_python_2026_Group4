@@ -18,4 +18,4 @@ with open(args.filename, 'r') as f:        #if you check the prac5Alfred.py file
 #time to read it into a pandas format
 df=pd.read_csv(args.filename, header=None)  #doing this within the "with open()" loop caused it to fail because it read f after cycling to the end, thinking it was empty
 print(df)                                   #also remember to specify that there are no headers or it'll eat a row for you!
-print(df.describe)              #df.describe would give us a bunch of statistical info if we had numbers in our matrix :)
+print(df.describe)              #df.describe would give us a bunch of statistical info if we had numbers in our matrix :) 
