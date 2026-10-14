@@ -1,6 +1,6 @@
 #creates a class 
 class Book:
-    def __init__(self,, title, author, year):
+    def __init__(self, title, author, year):
         self.title = title  #attaches attribute to object
         self.author = author
         self.year = year 
