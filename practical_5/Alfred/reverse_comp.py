@@ -19,7 +19,7 @@ for record in records:
 
     #reverse complement creates a....reverse complement to the sequence. This creates 'record'_rc for each record
 
-    rc= record.reverse_complement(id=record.id + "_rc", descriptions="reverse complement to", record)
+    rc= record.reverse_complement(id=record.id + "_rc", descriptions="reverse complement to" + record)
     #adds each rc_record to the list
     rc_records.append(rc)
 SeqIO.write(rc_records, "DNA_rc.fasta", "fasta") #SeqIO writes the list to a file. Syntax: Content, filename, format
